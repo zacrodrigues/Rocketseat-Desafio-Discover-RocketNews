@@ -1,0 +1,122 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--body-bg-color);
+    width: 100%;
+    color: var(--text-color);
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  h1 {
+    color: var(--title-color);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 6.5rem;
+    margin-bottom: 1rem;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-weight: 1.5rem;
+    line-height: 1.2rem;
+  }
+
+  #page-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'content image';
+    justify-content: center;
+  }
+
+  #content {
+    grid-area: content;
+    height: 100vh;
+    padding: 4rem 0 0 3rem;
+    max-width: 640px;
+  }
+
+  #content header #logo img {
+    height: 6rem;
+  }
+
+  #newsletter-form {
+    margin-top: 3.5rem;
+    position: absolute;
+  }
+
+  #newsletter-form label {
+    font-weight: 700;
+    color: var(--form-color);
+  }
+
+  #news-input {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    box-shadow: 1px 5px 20px 1px rgba(0, 0, 0, 0.5);
+  }	
+
+  #news-input input {
+    height: 48px;
+    width: 63rem;
+    border: 0;
+    padding-left: 0.8rem;
+    border-left: 0.4rem solid var(--title-color);
+  }
+
+  #news-input button {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background-color: var(--bg-button-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding-top: 0.1rem;
+  }
+
+  #news-input button:hover {
+    background-color: #6A43C2;
+  }
+
+  footer {
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+  }
+
+  footer a {
+    color: var(--bg-button-color);
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 0.3rem;
+    transition: margin-right 0.3s;
+  }
+
+  footer a:hover {
+    margin-right: 0.5rem;
+  }
+
+  #image {
+    grid-area: image;
+    background-image: url('./assets/read_news.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
